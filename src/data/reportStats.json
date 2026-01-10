@@ -1,0 +1,406 @@
+{
+  "kpis": {
+    "totalARR": 231677826.24,
+    "totalMRR": 19306485.519999996,
+    "accounts": 500,
+    "churnRate": 0.092,
+    "nrr": 1.021371572240456,
+    "avgRenewal": 0.7928999999999999,
+    "expansionMRR": 1569787.5899999999,
+    "avgDiscount": 0.1065
+  },
+  "arrByVertical": [
+    {
+      "Vertical": "Retail",
+      "ARR": 31846450.8
+    },
+    {
+      "Vertical": "Financial Services",
+      "ARR": 30937937.64
+    },
+    {
+      "Vertical": "Food & Beverage",
+      "ARR": 30838702.080000002
+    },
+    {
+      "Vertical": "Telecom",
+      "ARR": 26391026.64
+    },
+    {
+      "Vertical": "Manufacturing",
+      "ARR": 22968791.64
+    },
+    {
+      "Vertical": "Hospitality",
+      "ARR": 20887271.28
+    }
+  ],
+  "arrByRegion": [
+    {
+      "Region": "LATAM",
+      "ARR": 71884669.08
+    },
+    {
+      "Region": "APAC",
+      "ARR": 67522396.8
+    },
+    {
+      "Region": "North America",
+      "ARR": 48135005.64
+    },
+    {
+      "Region": "EMEA",
+      "ARR": 44135754.72
+    }
+  ],
+  "arrByMonth": [
+    {
+      "Contract Start Month": "2023-12",
+      "ARR": 2126735.88
+    },
+    {
+      "Contract Start Month": "2024-01",
+      "ARR": 9462546.36
+    },
+    {
+      "Contract Start Month": "2024-02",
+      "ARR": 1978867.32
+    },
+    {
+      "Contract Start Month": "2024-03",
+      "ARR": 5194541.28
+    },
+    {
+      "Contract Start Month": "2024-04",
+      "ARR": 6654905.4
+    },
+    {
+      "Contract Start Month": "2024-05",
+      "ARR": 3627485.7600000002
+    },
+    {
+      "Contract Start Month": "2024-06",
+      "ARR": 6349345.92
+    },
+    {
+      "Contract Start Month": "2024-07",
+      "ARR": 4277349.72
+    },
+    {
+      "Contract Start Month": "2024-08",
+      "ARR": 3423418.08
+    },
+    {
+      "Contract Start Month": "2024-09",
+      "ARR": 8066255.88
+    },
+    {
+      "Contract Start Month": "2024-10",
+      "ARR": 16575602.04
+    },
+    {
+      "Contract Start Month": "2024-11",
+      "ARR": 767603.5199999999
+    }
+  ],
+  "churnByPlan": [
+    {
+      "Plan Tier": "Enterprise",
+      "Churn Rate": 0.04411764705882353
+    },
+    {
+      "Plan Tier": "Growth",
+      "Churn Rate": 0.09868421052631579
+    },
+    {
+      "Plan Tier": "Pro",
+      "Churn Rate": 0.05309734513274336
+    },
+    {
+      "Plan Tier": "Starter",
+      "Churn Rate": 0.1317365269461078
+    }
+  ],
+  "churnByTerm": [
+    {
+      "Contract Term (Months)": 12,
+      "Churn Rate": 0.09747292418772563
+    },
+    {
+      "Contract Term (Months)": 24,
+      "Churn Rate": 0.11194029850746269
+    },
+    {
+      "Contract Term (Months)": 36,
+      "Churn Rate": 0.0449438202247191
+    }
+  ],
+  "renewalDist": [
+    {
+      "Bucket": "0-0.2",
+      "Accounts": 27
+    },
+    {
+      "Bucket": "0.2-0.4",
+      "Accounts": 19
+    },
+    {
+      "Bucket": "0.4-0.6",
+      "Accounts": 0
+    },
+    {
+      "Bucket": "0.6-0.8",
+      "Accounts": 71
+    },
+    {
+      "Bucket": "0.8-1.0",
+      "Accounts": 383
+    }
+  ],
+  "churnReasons": [
+    {
+      "Reason": "Merged/Acquired",
+      "Accounts": 14
+    },
+    {
+      "Reason": "Price increase",
+      "Accounts": 11
+    },
+    {
+      "Reason": "Low adoption",
+      "Accounts": 9
+    },
+    {
+      "Reason": "Service issues",
+      "Accounts": 7
+    },
+    {
+      "Reason": "Product fit",
+      "Accounts": 5
+    }
+  ],
+  "channelPerf": [
+    {
+      "Acquisition Channel": "Events",
+      "ARR": 47781326.4,
+      "Accounts": 81,
+      "ARR per Account": 589892.9185185184,
+      "Churn Rate": 0.09876543209876543
+    },
+    {
+      "Acquisition Channel": "Paid Search",
+      "ARR": 42770531.52,
+      "Accounts": 80,
+      "ARR per Account": 534631.6440000001,
+      "Churn Rate": 0.0875
+    },
+    {
+      "Acquisition Channel": "Outbound",
+      "ARR": 45916057.56,
+      "Accounts": 94,
+      "ARR per Account": 488468.6974468085,
+      "Churn Rate": 0.10638297872340426
+    },
+    {
+      "Acquisition Channel": "Partner",
+      "ARR": 36596480.64,
+      "Accounts": 83,
+      "ARR per Account": 440921.4534939759,
+      "Churn Rate": 0.10843373493975904
+    },
+    {
+      "Acquisition Channel": "Referrals",
+      "ARR": 33564194.88,
+      "Accounts": 83,
+      "ARR per Account": 404387.89012048196,
+      "Churn Rate": 0.060240963855421686
+    },
+    {
+      "Acquisition Channel": "Content",
+      "ARR": 25049235.24,
+      "Accounts": 79,
+      "ARR per Account": 317078.92708860757,
+      "Churn Rate": 0.08860759493670886
+    }
+  ],
+  "priceByRegion": [
+    {
+      "Region": "APAC",
+      "List_Price": 47.26193548387097,
+      "Net_Price": 41.44338709677419
+    },
+    {
+      "Region": "EMEA",
+      "List_Price": 44.86,
+      "Net_Price": 39.31273504273504
+    },
+    {
+      "Region": "LATAM",
+      "List_Price": 44.543617021276596,
+      "Net_Price": 39.220070921985815
+    },
+    {
+      "Region": "North America",
+      "List_Price": 43.924576271186446,
+      "Net_Price": 38.78694915254237
+    }
+  ],
+  "discountSummary": [
+    {
+      "Discount Bucket": "0-5%",
+      "Accounts": 86,
+      "ARR": 5372452.68,
+      "Churn_Rate": 0.11627906976744186
+    },
+    {
+      "Discount Bucket": "5-10%",
+      "Accounts": 185,
+      "ARR": 46720488.72,
+      "Churn_Rate": 0.10270270270270271
+    },
+    {
+      "Discount Bucket": "10-15%",
+      "Accounts": 142,
+      "ARR": 82164251.03999999,
+      "Churn_Rate": 0.09154929577464789
+    },
+    {
+      "Discount Bucket": "15-20%",
+      "Accounts": 72,
+      "ARR": 69855334.68,
+      "Churn_Rate": 0.05555555555555555
+    },
+    {
+      "Discount Bucket": "20-25%",
+      "Accounts": 13,
+      "ARR": 21113398.32,
+      "Churn_Rate": 0.0
+    },
+    {
+      "Discount Bucket": "25%+",
+      "Accounts": 2,
+      "ARR": 6451900.8,
+      "Churn_Rate": 0.0
+    }
+  ],
+  "usageDist": [
+    {
+      "Usage Bucket": "<0.80",
+      "Accounts": 76
+    },
+    {
+      "Usage Bucket": "0.80-0.95",
+      "Accounts": 119
+    },
+    {
+      "Usage Bucket": "0.95-1.10",
+      "Accounts": 113
+    },
+    {
+      "Usage Bucket": "1.10-1.25",
+      "Accounts": 125
+    },
+    {
+      "Usage Bucket": ">1.25",
+      "Accounts": 67
+    }
+  ],
+  "seatPen": [
+    {
+      "Plan Tier": "Enterprise",
+      "Seat Penetration": 0.32620934571938764
+    },
+    {
+      "Plan Tier": "Growth",
+      "Seat Penetration": 0.6019013016813953
+    },
+    {
+      "Plan Tier": "Pro",
+      "Seat Penetration": 0.4435624574645796
+    },
+    {
+      "Plan Tier": "Starter",
+      "Seat Penetration": 0.5979927967302011
+    }
+  ],
+  "topAccounts": [
+    {
+      "Account Name": "Delta Labs LLC",
+      "ARR": 7367345.28,
+      "Region": "LATAM",
+      "Plan Tier": "Enterprise"
+    },
+    {
+      "Account Name": "Delta Industries Corp",
+      "ARR": 6651534.0,
+      "Region": "APAC",
+      "Plan Tier": "Enterprise"
+    },
+    {
+      "Account Name": "Delta Pharma Corp",
+      "ARR": 6432030.0,
+      "Region": "EMEA",
+      "Plan Tier": "Enterprise"
+    },
+    {
+      "Account Name": "Zenith Manufacturing LLC",
+      "ARR": 5268048.24,
+      "Region": "EMEA",
+      "Plan Tier": "Enterprise"
+    },
+    {
+      "Account Name": "Quantum Works LLC",
+      "ARR": 5228524.8,
+      "Region": "LATAM",
+      "Plan Tier": "Enterprise"
+    },
+    {
+      "Account Name": "Summit Health PLC",
+      "ARR": 5177280.24,
+      "Region": "APAC",
+      "Plan Tier": "Enterprise"
+    }
+  ],
+  "insights": {
+    "topVertical": {
+      "Vertical": "Retail",
+      "ARR": 31846450.8
+    },
+    "topRegion": {
+      "Region": "LATAM",
+      "ARR": 71884669.08
+    },
+    "highestChurnPlan": {
+      "Plan Tier": "Starter",
+      "Churn Rate": 0.1317365269461078
+    },
+    "lowestChurnPlan": {
+      "Plan Tier": "Enterprise",
+      "Churn Rate": 0.04411764705882353
+    },
+    "highestChurnTerm": {
+      "Contract Term (Months)": 24.0,
+      "Churn Rate": 0.11194029850746269
+    },
+    "bestChannelArr": {
+      "Acquisition Channel": "Events",
+      "ARR": 47781326.4,
+      "Accounts": 81,
+      "ARR per Account": 589892.9185185184,
+      "Churn Rate": 0.09876543209876543
+    },
+    "bestChannelChurn": {
+      "Acquisition Channel": "Referrals",
+      "ARR": 33564194.88,
+      "Accounts": 83,
+      "ARR per Account": 404387.89012048196,
+      "Churn Rate": 0.060240963855421686
+    },
+    "highestDiscountChurn": {
+      "Discount Bucket": "0-5%",
+      "Accounts": 86,
+      "ARR": 5372452.68,
+      "Churn_Rate": 0.11627906976744186
+    }
+  }
+}

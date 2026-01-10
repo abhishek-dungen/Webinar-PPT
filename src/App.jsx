@@ -1,0 +1,161 @@
+import SlideGuidelines from './components/SlideGuidelines';
+import Slide21 from './components/Slide21';
+import Slide22 from './components/Slide22';
+import Slide23 from './components/Slide23';
+import Slide24 from './components/Slide24';
+import Slide32b from './components/Slide32b';
+import Slide32d from './components/Slide32d';
+import Slide32e from './components/Slide32e';
+import Slide32bHighlight from './components/Slide32bHighlight';
+import Slide32j from './components/Slide32j';
+import Slide32k from './components/Slide32k';
+import Slide32jDataCollectionHighlight from './components/Slide32jDataCollectionHighlight';
+import Slide32n from './components/Slide32n';
+import Slide32o from './components/Slide32o';
+import Slide32t from './components/Slide32t';
+import Slide32u from './components/Slide32u';
+import Slide32p from './components/Slide32p';
+import Slide32q from './components/Slide32q';
+import Slide32s from './components/Slide32s';
+import Slide32r from './components/Slide32r';
+import Slide32sGenAITools from './components/Slide32sGenAITools';
+import Slide32m from './components/Slide32m';
+import Slide32wDataConnection from './components/Slide32wDataConnection';
+import Slide32w from './components/Slide32w';
+import SlideDataModeling from './components/SlideDataModeling';
+import SlideDataModelingOptions from './components/SlideDataModelingOptions';
+import SlideLearnExcelSources from './components/SlideLearnExcelSources';
+import Slide32x from './components/Slide32x';
+import Slide32z from './components/Slide32z';
+import Slide32ab from './components/Slide32ab';
+import Slide32DashboardTools from './components/Slide32DashboardTools';
+import Slide32bFlow from './components/Slide32bFlow';
+import Slide32bFlowResume from './components/Slide32bFlowResume';
+import Slide50ATS from './components/Slide50ATS';
+import Slide50JD from './components/Slide50JD';
+import Slide50Handshake from './components/Slide50Handshake';
+import Slide51ATSFriendly from './components/Slide51ATSFriendly';
+import Slide51ResumeSections from './components/Slide51ResumeSections';
+import Slide51Step1 from './components/Slide51Step1';
+import Slide51Step2 from './components/Slide51Step2';
+import Slide51Step3 from './components/Slide51Step3';
+import Slide51Step4 from './components/Slide51Step4';
+import Slide51Step4Example from './components/Slide51Step4Example';
+import Slide51Step5 from './components/Slide51Step5';
+import Slide51Step5Example from './components/Slide51Step5Example';
+import Slide51Beautify from './components/Slide51Beautify';
+import Slide170 from './components/Slide170';
+import Slide171 from './components/Slide171';
+import Slide172 from './components/Slide172';
+import Slide173 from './components/Slide173';
+import Slide174 from './components/Slide174';
+import Slide175 from './components/Slide175';
+import Slide176 from './components/Slide176';
+import Slide177 from './components/Slide177';
+import Slide178 from './components/Slide178';
+import Slide51StepsSummary from './components/Slide51StepsSummary';
+import Slide51NoExperience from './components/Slide51NoExperience';
+import Slide32bFlowProjects from './components/Slide32bFlowProjects';
+import Slide32bPortfolioLook from './components/Slide32bPortfolioLook';
+import Slide32cProjects from './components/Slide32cProjects';
+import Slide52JobApplications from './components/Slide52JobApplications';
+import Slide52LinkedInGuides from './components/Slide52LinkedInGuides';
+import Slide32bFlowJobApplications from './components/Slide32bFlowJobApplications';
+import Slide52InterviewTypes from './components/Slide52InterviewTypes';
+import Slide52TechnicalRound from './components/Slide52TechnicalRound';
+import SlideProductSet1 from './components/SlideProductSet1';
+import SlideProductSet2 from './components/SlideProductSet2';
+import SlideProductSet3 from './components/SlideProductSet3';
+import SlideProductSet4 from './components/SlideProductSet4';
+import SlideProductAll from './components/SlideProductAll';
+
+const App = () => (
+  <div>
+    <SlideGuidelines />
+    <Slide21 />
+    <Slide22 />
+    <Slide23 />
+    <Slide24 />
+    <Slide32b />
+    <Slide32d />
+    <Slide32e />
+    <Slide32bHighlight />
+    <Slide32j />
+    <Slide32k visibleSteps={1} />
+    <Slide32k visibleSteps={2} />
+    <Slide32k visibleSteps={3} />
+    <Slide32k visibleSteps={4} />
+    <Slide32k visibleSteps={5} />
+    <Slide32k visibleSteps={6} />
+    <Slide32k visibleSteps={7} />
+    <Slide32jDataCollectionHighlight />
+    <Slide32k visibleSteps={2} />
+    <Slide32n />
+    <Slide32o />
+    <Slide32t />
+    <Slide32u />
+    <Slide32p />
+    <Slide32q />
+    <Slide32s />
+    <Slide32r />
+    <Slide32sGenAITools />
+    <Slide32m />
+    <Slide32k visibleSteps={3} />
+    <Slide32wDataConnection />
+    <Slide32k visibleSteps={4} />
+    <Slide32w />
+    <SlideLearnExcelSources />
+    <Slide32k visibleSteps={5} />
+    <Slide32x />
+    <Slide32z />
+    <Slide32ab />
+    <Slide32k visibleSteps={7} />
+    <Slide32DashboardTools />
+    <Slide32k visibleSteps={7} />
+    <SlideDataModeling />
+    <SlideDataModelingOptions />
+    <Slide32b />
+    <Slide32bFlow />
+    <Slide32bFlowResume />
+    <Slide50ATS />
+    <Slide50JD />
+    <Slide50Handshake />
+    <Slide51ATSFriendly />
+    <Slide51ResumeSections />
+    <Slide51Step1 />
+    <Slide51Step2 />
+    <Slide51Step3 />
+    <Slide51Step4 />
+    <Slide51Step4Example />
+    <Slide51Step5 />
+    <Slide51Step5Example />
+    <Slide51Beautify />
+    <Slide170 />
+    <Slide171 />
+    <Slide172 />
+    <Slide173 />
+    <Slide174 />
+    <Slide175 />
+    <Slide176 />
+    <Slide177 />
+    <Slide178 />
+    <Slide51StepsSummary />
+    <Slide51NoExperience />
+    <Slide32bFlowProjects />
+    <Slide32bPortfolioLook />
+    <Slide32cProjects />
+    <Slide32bFlowProjects />
+    <Slide52JobApplications />
+    <Slide52LinkedInGuides />
+    <Slide32bFlowJobApplications />
+    <Slide52InterviewTypes />
+    <Slide52TechnicalRound />
+    <SlideProductSet1 />
+    <SlideProductSet2 />
+    <SlideProductSet3 />
+    <SlideProductSet4 />
+    <SlideProductAll />
+  </div>
+);
+
+export default App;

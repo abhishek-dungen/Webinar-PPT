@@ -1,0 +1,30 @@
+import { motion } from 'framer-motion';
+
+const Slide32t = () => (
+  <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-br from-premium-black via-premium-black to-subtle-gray" />
+    <div className="relative z-10 max-w-5xl text-center space-y-8">
+      <motion.h2
+        className="font-display text-4xl md:text-5xl lg:text-6xl text-red-400"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+      >
+        ⚠️ AI IS SPEED. HUMANS ARE DIRECTION.
+      </motion.h2>
+      <motion.div
+        className="space-y-4 text-2xl md:text-3xl text-white leading-relaxed"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <p>AI does not think. AI only executes—very fast.</p>
+        <p>AI cannot replace domain understanding.</p>
+      </motion.div>
+    </div>
+  </section>
+);
+
+export default Slide32t;
