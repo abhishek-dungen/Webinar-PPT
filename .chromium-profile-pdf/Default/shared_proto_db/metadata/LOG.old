@@ -1,2 +1,3 @@
-2026/01/10-14:44:39.834 69fa73 Creating DB /Users/abhishekkumar/Downloads/VS Code/Webinar PPT/3/.chromium-profile-pdf/Default/shared_proto_db/metadata since it was missing.
-2026/01/10-14:44:39.838 69fa73 Reusing MANIFEST /Users/abhishekkumar/Downloads/VS Code/Webinar PPT/3/.chromium-profile-pdf/Default/shared_proto_db/metadata/MANIFEST-000001
+2026/01/11-16:08:57.225 df36ce Reusing MANIFEST /Users/abhishekkumar/Downloads/VS Code/Webinar PPT/3 copy/.chromium-profile-pdf/Default/shared_proto_db/metadata/MANIFEST-000001
+2026/01/11-16:08:57.225 df36ce Recovering log #3
+2026/01/11-16:08:57.227 df36ce Reusing old log /Users/abhishekkumar/Downloads/VS Code/Webinar PPT/3 copy/.chromium-profile-pdf/Default/shared_proto_db/metadata/000003.log 
