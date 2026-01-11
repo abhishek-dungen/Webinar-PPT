@@ -24,12 +24,17 @@ import Slide32w from './components/Slide32w';
 import SlideDataModeling from './components/SlideDataModeling';
 import SlideDataModelingOptions from './components/SlideDataModelingOptions';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
+import SlideExcelOffer from './components/SlideExcelOffer';
+import SlideMicrosoft365Link from './components/SlideMicrosoft365Link';
+import SlideClaudeInsights from './components/SlideClaudeInsights';
 import Slide32x from './components/Slide32x';
 import Slide32z from './components/Slide32z';
 import Slide32ab from './components/Slide32ab';
 import Slide32DashboardTools from './components/Slide32DashboardTools';
 import Slide32bFlow from './components/Slide32bFlow';
 import Slide32bFlowResume from './components/Slide32bFlowResume';
+import SlideGoogleAntiGravity from './components/SlideGoogleAntiGravity';
+import SlideDashboardCodex from './components/SlideDashboardCodex';
 import Slide50ATS from './components/Slide50ATS';
 import Slide50JD from './components/Slide50JD';
 import Slide50Handshake from './components/Slide50Handshake';
@@ -139,12 +144,18 @@ const App = () => {
       <Slide32k visibleSteps={4} />
       <Slide32w />
       <SlideLearnExcelSources />
+      <SlideMicrosoft365Link />
+      <SlideExcelOffer />
+      <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
       <Slide32x />
       <Slide32z />
+      <SlideClaudeInsights />
       <Slide32ab />
-      <Slide32k visibleSteps={7} />
+      <SlideGoogleAntiGravity />
+      <Slide32k visibleSteps={7} highlightStep={6} />
       <Slide32DashboardTools />
+      <SlideDashboardCodex />
       <Slide32k visibleSteps={7} />
       <SlideDataModeling />
       <SlideDataModelingOptions />

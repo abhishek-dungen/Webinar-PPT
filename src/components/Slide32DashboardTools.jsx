@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
 
 import bricksLogo from '../../DB logos/Bricks AI.jpeg';
-import googleAntiLogo from '../../DB logos/Google Anti-Gravity.jpeg';
 import vsCodexLogo from '../../DB logos/Visual Studio Code + Codex Extension.svg.png';
 
 const tools = [
   { name: 'Bricks AI', logo: bricksLogo },
-  { name: 'Google Anti-Gravity', logo: googleAntiLogo },
   { name: 'Visual Studio + Codex', logo: vsCodexLogo },
 ];
 
@@ -25,7 +23,7 @@ const Slide32DashboardTools = () => (
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

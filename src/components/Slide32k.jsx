@@ -26,7 +26,7 @@ const steps = [
   },
 ];
 
-const Slide32k = ({ visibleSteps = steps.length }) => (
+const Slide32k = ({ visibleSteps = steps.length, highlightStep = null }) => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-premium-black via-premium-black to-subtle-gray" />
     <div className="relative z-10 max-w-6xl w-full space-y-6">
@@ -53,25 +53,26 @@ const Slide32k = ({ visibleSteps = steps.length }) => (
         </div>
         {steps.slice(0, visibleSteps).map(({ step, tools }, index, arr) => {
           const isLatest = index === arr.length - 1;
+          const isHighlighted = highlightStep ? index + 1 === highlightStep : isLatest;
           return (
             <div
               key={step}
               className={`grid grid-cols-1 md:grid-cols-2 border-t text-base md:text-lg ${
-                isLatest
+                isHighlighted
                   ? 'bg-gradient-to-r from-premium-gold/40 via-premium-gold/30 to-transparent border-premium-gold/40'
                   : 'bg-transparent border-white/10'
               }`}
             >
               <div
                 className={`px-4 py-4 font-semibold ${
-                  isLatest ? 'text-premium-gold' : 'text-white/50'
+                  isHighlighted ? 'text-premium-gold' : 'text-white/50'
                 }`}
               >
                 {step}
               </div>
               <div
                 className={`px-4 py-4 leading-relaxed ${
-                  isLatest ? 'text-white' : 'text-white/40'
+                  isHighlighted ? 'text-white' : 'text-white/40'
                 }`}
               >
                 {tools}

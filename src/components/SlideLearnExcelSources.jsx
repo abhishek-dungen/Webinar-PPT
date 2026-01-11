@@ -11,7 +11,7 @@ const SlideLearnExcelSources = () => (
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        From where to Learn Basic to Advance Excel?
+        From Where to Learn all This?
       </motion.h2>
     </div>
   </section>
