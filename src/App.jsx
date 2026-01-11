@@ -200,6 +200,7 @@ const App = () => {
       <SlideProductSet3 />
       <SlideProductSet4 />
       <SlideProductAll />
+      <SlideExcelOffer />
     </div>
   );
 };

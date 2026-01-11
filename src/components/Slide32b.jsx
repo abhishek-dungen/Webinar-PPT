@@ -32,7 +32,9 @@ const Slide32b = () => (
               Learn Excel
             </div>
           </div>
-          <div className={`${boxBase} p-8 space-y-4`}>
+          <div
+            className={`${boxBase} p-8 space-y-4 border-premium-gold/60 shadow-[0_0_45px_rgba(230,173,65,0.25)]`}
+          >
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
               How to Get the Job/Freelance work
             </div>

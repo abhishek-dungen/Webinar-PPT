@@ -34,20 +34,20 @@ const Slide32bFlowJobApplications = () => (
         <div className="absolute left-[5%] right-[5%] top-0 h-0.5 bg-white/15" />
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           {steps.map((title, index) => {
-            const isJobApplication = index === 3;
+            const isInterviews = index === 4;
             return (
               <div key={title} className="relative flex flex-col items-center text-center flex-1">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-8 w-0.5 h-8 bg-white/20" />
                 <div
                   className={`${baseCard} ${
-                    isJobApplication
+                    isInterviews
                       ? 'text-white border-premium-gold/80 shadow-[0_30px_90px_rgba(255,215,0,0.35)] bg-gradient-to-br from-premium-gold/25 via-premium-gold/10 to-transparent'
                       : 'opacity-60'
                   }`}
                 >
                   <div
                     className={`flex items-center justify-center w-12 h-12 rounded-full font-semibold ${
-                      isJobApplication
+                      isInterviews
                         ? 'bg-white/20 text-premium-gold border border-premium-gold/60 shadow-[0_0_25px_rgba(255,215,0,0.5)]'
                         : 'bg-transparent border border-white/10 text-white/40'
                     }`}
