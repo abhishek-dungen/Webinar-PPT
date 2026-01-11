@@ -4,8 +4,9 @@ import Slide21 from './components/Slide21';
 import Slide22 from './components/Slide22';
 import Slide23 from './components/Slide23';
 import Slide24 from './components/Slide24';
-import Slide32b from './components/Slide32b';
-import Slide32bHighlight from './components/Slide32bHighlight';
+import Slide32bIntro from './components/Slide32bIntro';
+import Slide32bHighlightUnique from './components/Slide32bHighlightUnique';
+import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
 import Slide32jDataCollectionHighlight from './components/Slide32jDataCollectionHighlight';
@@ -21,8 +22,6 @@ import Slide32sGenAITools from './components/Slide32sGenAITools';
 import Slide32m from './components/Slide32m';
 import Slide32wDataConnection from './components/Slide32wDataConnection';
 import Slide32w from './components/Slide32w';
-import SlideDataModeling from './components/SlideDataModeling';
-import SlideDataModelingOptions from './components/SlideDataModelingOptions';
 import SlideLearnExcelSources from './components/SlideLearnExcelSources';
 import SlideExcelOffer from './components/SlideExcelOffer';
 import SlideMicrosoft365Link from './components/SlideMicrosoft365Link';
@@ -31,8 +30,8 @@ import Slide32x from './components/Slide32x';
 import Slide32z from './components/Slide32z';
 import Slide32ab from './components/Slide32ab';
 import Slide32DashboardTools from './components/Slide32DashboardTools';
-import Slide32bFlow from './components/Slide32bFlow';
-import Slide32bFlowResume from './components/Slide32bFlowResume';
+import Slide32bFlowIntro from './components/Slide32bFlowIntro';
+import Slide32bFlowResumeUnique from './components/Slide32bFlowResumeUnique';
 import SlideGoogleAntiGravity from './components/SlideGoogleAntiGravity';
 import SlideDashboardCodex from './components/SlideDashboardCodex';
 import Slide50ATS from './components/Slide50ATS';
@@ -59,12 +58,13 @@ import Slide177 from './components/Slide177';
 import Slide178 from './components/Slide178';
 import Slide51StepsSummary from './components/Slide51StepsSummary';
 import Slide51NoExperience from './components/Slide51NoExperience';
-import Slide32bFlowProjects from './components/Slide32bFlowProjects';
+import Slide32bFlowProjectsOne from './components/Slide32bFlowProjectsOne';
 import Slide32bPortfolioLook from './components/Slide32bPortfolioLook';
 import Slide32cProjects from './components/Slide32cProjects';
 import Slide52JobApplications from './components/Slide52JobApplications';
 import Slide52LinkedInGuides from './components/Slide52LinkedInGuides';
-import Slide32bFlowJobApplications from './components/Slide32bFlowJobApplications';
+import Slide32bFlowJobApplicationsUnique from './components/Slide32bFlowJobApplicationsUnique';
+import Slide32bFlowProjectsTwo from './components/Slide32bFlowProjectsTwo';
 import Slide52InterviewTypes from './components/Slide52InterviewTypes';
 import Slide52TechnicalRound from './components/Slide52TechnicalRound';
 import SlideProductSet1 from './components/SlideProductSet1';
@@ -117,8 +117,8 @@ const App = () => {
       <Slide22 />
       <Slide23 />
       <Slide24 />
-      <Slide32b />
-      <Slide32bHighlight />
+      <Slide32bIntro />
+      <Slide32bHighlightUnique />
       <Slide32j />
       <Slide32k visibleSteps={1} />
       <Slide32k visibleSteps={2} />
@@ -157,11 +157,9 @@ const App = () => {
       <Slide32DashboardTools />
       <SlideDashboardCodex />
       <Slide32k visibleSteps={7} />
-      <SlideDataModeling />
-      <SlideDataModelingOptions />
-      <Slide32b />
-      <Slide32bFlow />
-      <Slide32bFlowResume />
+      <Slide32bRecap />
+      <Slide32bFlowIntro />
+      <Slide32bFlowResumeUnique />
       <Slide50ATS />
       <Slide50JD />
       <Slide50Handshake />
@@ -186,13 +184,13 @@ const App = () => {
       <Slide178 />
       <Slide51StepsSummary />
       <Slide51NoExperience />
-      <Slide32bFlowProjects />
+      <Slide32bFlowProjectsOne />
       <Slide32bPortfolioLook />
       <Slide32cProjects />
-      <Slide32bFlowProjects />
+      <Slide32bFlowProjectsTwo />
       <Slide52JobApplications />
       <Slide52LinkedInGuides />
-      <Slide32bFlowJobApplications />
+      <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
       <Slide52TechnicalRound />
       <SlideProductSet1 />

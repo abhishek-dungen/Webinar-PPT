@@ -16,7 +16,14 @@ const SlideDashboardCodex = () => (
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        Dashboard Made Using VS Code + Codex
+        <a
+          href="https://chimerical-palmier-b581bc.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="underline decoration-premium-gold/70 underline-offset-8 hover:text-premium-gold transition-colors"
+        >
+          Dashboard Made Using VS Code + Codex
+        </a>
       </motion.h2>
       <motion.img
         src={dashboardImage}
