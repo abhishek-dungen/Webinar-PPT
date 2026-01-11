@@ -1,11 +1,10 @@
+import { useCallback, useEffect, useState } from 'react';
 import SlideGuidelines from './components/SlideGuidelines';
 import Slide21 from './components/Slide21';
 import Slide22 from './components/Slide22';
 import Slide23 from './components/Slide23';
 import Slide24 from './components/Slide24';
 import Slide32b from './components/Slide32b';
-import Slide32d from './components/Slide32d';
-import Slide32e from './components/Slide32e';
 import Slide32bHighlight from './components/Slide32bHighlight';
 import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
@@ -69,93 +68,129 @@ import SlideProductSet3 from './components/SlideProductSet3';
 import SlideProductSet4 from './components/SlideProductSet4';
 import SlideProductAll from './components/SlideProductAll';
 
-const App = () => (
-  <div>
-    <SlideGuidelines />
-    <Slide21 />
-    <Slide22 />
-    <Slide23 />
-    <Slide24 />
-    <Slide32b />
-    <Slide32d />
-    <Slide32e />
-    <Slide32bHighlight />
-    <Slide32j />
-    <Slide32k visibleSteps={1} />
-    <Slide32k visibleSteps={2} />
-    <Slide32k visibleSteps={3} />
-    <Slide32k visibleSteps={4} />
-    <Slide32k visibleSteps={5} />
-    <Slide32k visibleSteps={6} />
-    <Slide32k visibleSteps={7} />
-    <Slide32jDataCollectionHighlight />
-    <Slide32k visibleSteps={2} />
-    <Slide32n />
-    <Slide32o />
-    <Slide32t />
-    <Slide32u />
-    <Slide32p />
-    <Slide32q />
-    <Slide32s />
-    <Slide32r />
-    <Slide32sGenAITools />
-    <Slide32m />
-    <Slide32k visibleSteps={3} />
-    <Slide32wDataConnection />
-    <Slide32k visibleSteps={4} />
-    <Slide32w />
-    <SlideLearnExcelSources />
-    <Slide32k visibleSteps={5} />
-    <Slide32x />
-    <Slide32z />
-    <Slide32ab />
-    <Slide32k visibleSteps={7} />
-    <Slide32DashboardTools />
-    <Slide32k visibleSteps={7} />
-    <SlideDataModeling />
-    <SlideDataModelingOptions />
-    <Slide32b />
-    <Slide32bFlow />
-    <Slide32bFlowResume />
-    <Slide50ATS />
-    <Slide50JD />
-    <Slide50Handshake />
-    <Slide51ATSFriendly />
-    <Slide51ResumeSections />
-    <Slide51Step1 />
-    <Slide51Step2 />
-    <Slide51Step3 />
-    <Slide51Step4 />
-    <Slide51Step4Example />
-    <Slide51Step5 />
-    <Slide51Step5Example />
-    <Slide51Beautify />
-    <Slide170 />
-    <Slide171 />
-    <Slide172 />
-    <Slide173 />
-    <Slide174 />
-    <Slide175 />
-    <Slide176 />
-    <Slide177 />
-    <Slide178 />
-    <Slide51StepsSummary />
-    <Slide51NoExperience />
-    <Slide32bFlowProjects />
-    <Slide32bPortfolioLook />
-    <Slide32cProjects />
-    <Slide32bFlowProjects />
-    <Slide52JobApplications />
-    <Slide52LinkedInGuides />
-    <Slide32bFlowJobApplications />
-    <Slide52InterviewTypes />
-    <Slide52TechnicalRound />
-    <SlideProductSet1 />
-    <SlideProductSet2 />
-    <SlideProductSet3 />
-    <SlideProductSet4 />
-    <SlideProductAll />
-  </div>
-);
+const App = () => {
+  const [targetSlide, setTargetSlide] = useState('');
+  const [totalSlides, setTotalSlides] = useState(0);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('.slide-section');
+    setTotalSlides(sections.length);
+  }, []);
+
+  const handleJump = useCallback(
+    event => {
+      event.preventDefault();
+      const slideNumber = parseInt(targetSlide, 10);
+      if (Number.isNaN(slideNumber) || slideNumber < 1) return;
+      const sections = document.querySelectorAll('.slide-section');
+      const target = sections[Math.min(slideNumber, sections.length) - 1];
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTargetSlide('');
+      }
+    },
+    [targetSlide],
+  );
+
+  return (
+    <div>
+      <form
+        onSubmit={handleJump}
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2 rounded-full border border-white/10 bg-premium-black/70 px-2 py-3 text-[10px] backdrop-blur"
+      >
+        <input
+          type="number"
+          min="1"
+          max={totalSlides || undefined}
+          value={targetSlide}
+          onChange={event => setTargetSlide(event.target.value)}
+          className="no-spinner w-10 rounded-xl border border-white/15 bg-transparent px-1 py-1 text-center text-xs font-semibold text-white placeholder:text-white/40 focus:border-premium-gold focus:outline-none"
+        />
+      </form>
+      <SlideGuidelines />
+      <Slide21 />
+      <Slide22 />
+      <Slide23 />
+      <Slide24 />
+      <Slide32b />
+      <Slide32bHighlight />
+      <Slide32j />
+      <Slide32k visibleSteps={1} />
+      <Slide32k visibleSteps={2} />
+      <Slide32k visibleSteps={3} />
+      <Slide32k visibleSteps={4} />
+      <Slide32k visibleSteps={5} />
+      <Slide32k visibleSteps={6} />
+      <Slide32k visibleSteps={7} />
+      <Slide32jDataCollectionHighlight />
+      <Slide32k visibleSteps={2} />
+      <Slide32n />
+      <Slide32o />
+      <Slide32t />
+      <Slide32u />
+      <Slide32p />
+      <Slide32q />
+      <Slide32s />
+      <Slide32r />
+      <Slide32sGenAITools />
+      <Slide32m />
+      <Slide32k visibleSteps={3} />
+      <Slide32wDataConnection />
+      <Slide32k visibleSteps={4} />
+      <Slide32w />
+      <SlideLearnExcelSources />
+      <Slide32k visibleSteps={5} />
+      <Slide32x />
+      <Slide32z />
+      <Slide32ab />
+      <Slide32k visibleSteps={7} />
+      <Slide32DashboardTools />
+      <Slide32k visibleSteps={7} />
+      <SlideDataModeling />
+      <SlideDataModelingOptions />
+      <Slide32b />
+      <Slide32bFlow />
+      <Slide32bFlowResume />
+      <Slide50ATS />
+      <Slide50JD />
+      <Slide50Handshake />
+      <Slide51ATSFriendly />
+      <Slide51ResumeSections />
+      <Slide51Step1 />
+      <Slide51Step2 />
+      <Slide51Step3 />
+      <Slide51Step4 />
+      <Slide51Step4Example />
+      <Slide51Step5 />
+      <Slide51Step5Example />
+      <Slide51Beautify />
+      <Slide170 />
+      <Slide171 />
+      <Slide172 />
+      <Slide173 />
+      <Slide174 />
+      <Slide175 />
+      <Slide176 />
+      <Slide177 />
+      <Slide178 />
+      <Slide51StepsSummary />
+      <Slide51NoExperience />
+      <Slide32bFlowProjects />
+      <Slide32bPortfolioLook />
+      <Slide32cProjects />
+      <Slide32bFlowProjects />
+      <Slide52JobApplications />
+      <Slide52LinkedInGuides />
+      <Slide32bFlowJobApplications />
+      <Slide52InterviewTypes />
+      <Slide52TechnicalRound />
+      <SlideProductSet1 />
+      <SlideProductSet2 />
+      <SlideProductSet3 />
+      <SlideProductSet4 />
+      <SlideProductAll />
+    </div>
+  );
+};
 
 export default App;
