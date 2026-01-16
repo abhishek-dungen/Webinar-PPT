@@ -5,6 +5,7 @@ import Slide22 from './components/Slide22';
 import Slide23 from './components/Slide23';
 import Slide24 from './components/Slide24';
 import Slide32bIntro from './components/Slide32bIntro';
+import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
 import Slide32bHighlightUnique from './components/Slide32bHighlightUnique';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
@@ -31,7 +32,32 @@ import Slide32z from './components/Slide32z';
 import Slide32ab from './components/Slide32ab';
 import Slide32DashboardTools from './components/Slide32DashboardTools';
 import Slide32bFlowIntro from './components/Slide32bFlowIntro';
+import Slide32bFlowFreelance from './components/Slide32bFlowFreelance';
+import Slide32bFlowFreelanceHighlight from './components/Slide32bFlowFreelanceHighlight';
+import Slide32bFlowFreelanceProfileHighlight from './components/Slide32bFlowFreelanceProfileHighlight';
+import Slide32bFlowFreelancePortfolioHighlight from './components/Slide32bFlowFreelancePortfolioHighlight';
 import Slide32bFlowResumeUnique from './components/Slide32bFlowResumeUnique';
+import SlideFreelanceProfileStructure from './components/SlideFreelanceProfileStructure';
+import SlideFreelanceProfileTitle from './components/SlideFreelanceProfileTitle';
+import SlideFreelanceProfileSummaryDo from './components/SlideFreelanceProfileSummaryDo';
+import SlideFreelanceProfileSummarySample from './components/SlideFreelanceProfileSummarySample';
+import SlideFreelanceProfileSkillsPortfolio from './components/SlideFreelanceProfileSkillsPortfolio';
+import SlideFreelanceProjectCategories from './components/SlideFreelanceProjectCategories';
+import Slide32bPortfolioLookCopy from './components/Slide32bPortfolioLookCopy';
+import Slide32bFlowFreelanceProcessHighlight from './components/Slide32bFlowFreelanceProcessHighlight';
+import SlideFreelancingPlatforms from './components/SlideFreelancingPlatforms';
+import SlideFreelancingPlatformsFocus from './components/SlideFreelancingPlatformsFocus';
+import SlideFreelancingPlatformsFiverr from './components/SlideFreelancingPlatformsFiverr';
+import SlideFreelancingPlatformsPeoplePerHour from './components/SlideFreelancingPlatformsPeoplePerHour';
+import SlideFreelancingPlatformsToptal from './components/SlideFreelancingPlatformsToptal';
+import SlideFreelancingPlatformsLinkedIn from './components/SlideFreelancingPlatformsLinkedIn';
+import SlideFreelanceProjectsProcess from './components/SlideFreelanceProjectsProcess';
+import SlideOutboundProcess from './components/SlideOutboundProcess';
+import SlideOutboundProcessHighlight1 from './components/SlideOutboundProcessHighlight1';
+import SlideOutboundProcessHighlight2 from './components/SlideOutboundProcessHighlight2';
+import SlideSampleUpworkPosting from './components/SlideSampleUpworkPosting';
+import SlideHowToBid from './components/SlideHowToBid';
+import SlideSampleBid from './components/SlideSampleBid';
 import SlideGoogleAntiGravity from './components/SlideGoogleAntiGravity';
 import SlideDashboardCodex from './components/SlideDashboardCodex';
 import Slide50ATS from './components/Slide50ATS';
@@ -199,6 +225,32 @@ const App = () => {
       <SlideProductSet4 />
       <SlideProductAll />
       <SlideExcelOffer />
+      <Slide32bIntroFreelance />
+      <Slide32bFlowFreelance />
+      <Slide32bFlowFreelanceHighlight />
+      <Slide32bFlowFreelanceProfileHighlight />
+      <SlideFreelanceProfileStructure />
+      <SlideFreelanceProfileTitle />
+      <SlideFreelanceProfileSummaryDo />
+      <SlideFreelanceProfileSummarySample />
+      <SlideFreelanceProfileSkillsPortfolio />
+      <Slide32bFlowFreelancePortfolioHighlight />
+      <Slide32bPortfolioLookCopy />
+      <SlideFreelanceProjectCategories />
+      <Slide32bFlowFreelanceProcessHighlight />
+      <SlideFreelanceProjectsProcess />
+      <SlideOutboundProcess />
+      <SlideOutboundProcessHighlight1 />
+      <SlideOutboundProcessHighlight2 />
+      <SlideSampleUpworkPosting />
+      <SlideHowToBid />
+      <SlideSampleBid />
+      <SlideFreelancingPlatforms />
+      <SlideFreelancingPlatformsFocus />
+      <SlideFreelancingPlatformsFiverr />
+      <SlideFreelancingPlatformsPeoplePerHour />
+      <SlideFreelancingPlatformsToptal />
+      <SlideFreelancingPlatformsLinkedIn />
     </div>
   );
 };

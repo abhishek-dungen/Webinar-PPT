@@ -30,6 +30,9 @@ const SlideExcelOffer = () => (
             <div className="text-4xl md:text-5xl font-bold text-[#9CD96B]">
               Rs 6,000
             </div>
+            <ul className="mt-2 text-sm md:text-base text-white/70 list-disc list-inside">
+              <li>Lifetime access</li>
+            </ul>
           </div>
         </motion.div>
 
@@ -50,6 +53,9 @@ const SlideExcelOffer = () => (
             <div className="text-4xl md:text-5xl font-bold text-[#F26B3A]">
               Rs 7,000
             </div>
+            <ul className="mt-2 text-sm md:text-base text-white/70 list-disc list-inside">
+              <li>1 year validity</li>
+            </ul>
           </div>
         </motion.div>
       </div>
@@ -73,7 +79,7 @@ const SlideExcelOffer = () => (
           </span>
         </div>
         <div className="rounded-full border border-premium-gold/40 bg-premium-gold/15 px-8 py-4 text-center text-3xl md:text-4xl font-bold text-premium-gold">
-          Special Webinar Price Rs 1,999
+          Special Webinar Price Rs 2,000
         </div>
       </motion.div>
     </div>
