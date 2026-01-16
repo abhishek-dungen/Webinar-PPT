@@ -58,6 +58,7 @@ import SlideOutboundProcessHighlight2 from './components/SlideOutboundProcessHig
 import SlideSampleUpworkPosting from './components/SlideSampleUpworkPosting';
 import SlideHowToBid from './components/SlideHowToBid';
 import SlideSampleBid from './components/SlideSampleBid';
+import SlideOutboundProcessHighlight4 from './components/SlideOutboundProcessHighlight4';
 import SlideGoogleAntiGravity from './components/SlideGoogleAntiGravity';
 import SlideDashboardCodex from './components/SlideDashboardCodex';
 import Slide50ATS from './components/Slide50ATS';
@@ -245,6 +246,7 @@ const App = () => {
       <SlideSampleUpworkPosting />
       <SlideHowToBid />
       <SlideSampleBid />
+      <SlideOutboundProcessHighlight4 />
       <SlideFreelancingPlatforms />
       <SlideFreelancingPlatformsFocus />
       <SlideFreelancingPlatformsFiverr />
