@@ -51,6 +51,20 @@ import SlideFreelancingPlatformsFiverr from './components/SlideFreelancingPlatfo
 import SlideFreelancingPlatformsPeoplePerHour from './components/SlideFreelancingPlatformsPeoplePerHour';
 import SlideFreelancingPlatformsToptal from './components/SlideFreelancingPlatformsToptal';
 import SlideFreelancingPlatformsLinkedIn from './components/SlideFreelancingPlatformsLinkedIn';
+import SlideHourlyVsFixedPrice from './components/SlideHourlyVsFixedPrice';
+import SlideScopeCreep from './components/SlideScopeCreep';
+import SlideGoldenRule from './components/SlideGoldenRule';
+import SlideGoodReviews from './components/SlideGoodReviews';
+import SlideNegotiationTips from './components/SlideNegotiationTips';
+import SlideScreeningCall from './components/SlideScreeningCall';
+import SlideRequirementDocument from './components/SlideRequirementDocument';
+import SlideUpwork from './components/SlideUpwork';
+import SlideUpworkFullBleed from './components/SlideUpworkFullBleed';
+import SlideFreelancerPlatform from './components/SlideFreelancerPlatform';
+import SlideFiverrPlatform from './components/SlideFiverrPlatform';
+import SlidePeoplePerHourPlatform from './components/SlidePeoplePerHourPlatform';
+import SlideToptalPlatform from './components/SlideToptalPlatform';
+import SlideOutboundProcessHighlightFollowUp from './components/SlideOutboundProcessHighlightFollowUp';
 import SlideFreelanceProjectsProcess from './components/SlideFreelanceProjectsProcess';
 import SlideOutboundProcess from './components/SlideOutboundProcess';
 import SlideOutboundProcessHighlight1 from './components/SlideOutboundProcessHighlight1';
@@ -229,6 +243,13 @@ const App = () => {
       <Slide32bIntroFreelance />
       <Slide32bFlowFreelance />
       <Slide32bFlowFreelanceHighlight />
+      <SlideFreelancingPlatforms />
+      <SlideUpworkFullBleed />
+      <SlideFreelancerPlatform />
+      <SlideFiverrPlatform />
+      <SlidePeoplePerHourPlatform />
+      <SlideToptalPlatform />
+      <SlideFreelancingPlatformsLinkedIn />
       <Slide32bFlowFreelanceProfileHighlight />
       <SlideFreelanceProfileStructure />
       <SlideFreelanceProfileTitle />
@@ -242,17 +263,19 @@ const App = () => {
       <SlideFreelanceProjectsProcess />
       <SlideOutboundProcess />
       <SlideOutboundProcessHighlight1 />
+      <SlideRequirementDocument />
       <SlideOutboundProcessHighlight2 />
       <SlideSampleUpworkPosting />
       <SlideHowToBid />
       <SlideSampleBid />
       <SlideOutboundProcessHighlight4 />
-      <SlideFreelancingPlatforms />
-      <SlideFreelancingPlatformsFocus />
-      <SlideFreelancingPlatformsFiverr />
-      <SlideFreelancingPlatformsPeoplePerHour />
-      <SlideFreelancingPlatformsToptal />
-      <SlideFreelancingPlatformsLinkedIn />
+      <SlideScreeningCall />
+      <SlideGoldenRule />
+      <SlideHourlyVsFixedPrice />
+      <SlideScopeCreep />
+      <SlideGoodReviews />
+      <SlideNegotiationTips />
+      <SlideOutboundProcessHighlightFollowUp />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const steps = [
   },
 ];
 
-const SlideOutboundProcessHighlight4 = () => (
+const SlideOutboundProcessHighlightFollowUp = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-6 md:px-12 lg:px-16 relative overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-premium-black via-premium-black to-subtle-gray" />
     <motion.div
@@ -36,7 +36,7 @@ const SlideOutboundProcessHighlight4 = () => (
       <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-center">Outbound Process</h2>
       <div className="flex flex-col gap-3 max-w-4xl mx-auto text-sm md:text-base text-white/85">
         {steps.map((step, index) => {
-          const isHighlight = index === 2;
+          const isHighlight = index === 3;
           return (
             <div
               key={step.title}
@@ -59,4 +59,4 @@ const SlideOutboundProcessHighlight4 = () => (
   </section>
 );
 
-export default SlideOutboundProcessHighlight4;
+export default SlideOutboundProcessHighlightFollowUp;

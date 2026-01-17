@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion';
 
-import freelancerLogo from '../assets/freelancer-logos/Freelancer_vector_Logo_logoshape.com_.svg';
-import upworkLogo from '../assets/freelancer-logos/upwork-round-logo-icon-png-7017516949686332n4bo69bd8.png';
+import upworkLogo from '../../Freelancer logos/upwork-round-logo-icon-png-7017516949686332n4bo69bd8.png';
+import upworkScreenshot from '../../Freelancer logos/image23.png';
 
 const platforms = [
-  { name: 'Upwork', logo: upworkLogo },
-  { name: 'Freelancer', logo: freelancerLogo },
+  { name: 'Upwork', screenshot: upworkScreenshot },
 ];
 
 const SlideFreelancingPlatformsFocus = () => (
@@ -19,15 +18,20 @@ const SlideFreelancingPlatformsFocus = () => (
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
     >
       <h2 className="font-display text-4xl md:text-5xl lg:text-6xl">Freelancing Platforms</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {platforms.map(({ name, logo }) => (
+      <div className="grid grid-cols-1 gap-6">
+        {platforms.map(({ name, screenshot }) => (
           <div
             key={name}
-            className="rounded-3xl border border-white/10 bg-white/5 px-6 py-8 shadow-[0_25px_60px_rgba(0,0,0,0.4)] backdrop-blur flex flex-col items-center gap-4"
+            className="rounded-3xl border border-white/10 bg-white/5 px-5 py-6 shadow-[0_25px_60px_rgba(0,0,0,0.4)] backdrop-blur flex flex-col items-center gap-4"
           >
-            <div className="w-28 h-28 rounded-2xl overflow-hidden bg-white/10 flex items-center justify-center">
-              <img src={logo} alt={name} className="w-full h-full object-contain" />
+            <div className="w-20 h-20 rounded-2xl overflow-hidden bg-white/10 flex items-center justify-center">
+              <img src={upworkLogo} alt={`${name} logo`} className="w-full h-full object-contain" />
             </div>
+            <img
+              src={screenshot}
+              alt={`${name} job post screenshot`}
+              className="w-full max-w-3xl max-h-[46vh] rounded-2xl object-contain bg-white shadow-[0_20px_50px_rgba(0,0,0,0.35)]"
+            />
             <p className="text-2xl font-semibold">{name}</p>
           </div>
         ))}
