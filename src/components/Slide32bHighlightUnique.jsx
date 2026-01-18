@@ -8,7 +8,8 @@ const mutedBox = `${boxBase} opacity-50`;
 
 const options = [
   { key: 'learn', label: 'Learn Excel' },
-  { key: 'job', label: 'How to Get the Job/Freelance work' },
+  { key: 'job', label: 'How to Get the Job' },
+  { key: 'freelance', label: 'Freelancing Using Excel' },
   { key: 'ai', label: 'AI Tools' },
 ];
 
@@ -63,26 +64,33 @@ const Slide32bHighlightUnique = ({ highlight = 'learn' } = {}) => {
                 {options[1].label}
               </div>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className={`${
-              isHighlighted(options[2].key) ? focusBox : mutedBox
-            } px-8 py-6 text-center max-w-xl w-full`}
-          >
-            {isHighlighted(options[2].key) && (
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
-            )}
+            <div className={`${isHighlighted(options[2].key) ? focusBox : mutedBox} p-8 space-y-4`}>
+              {isHighlighted(options[2].key) && (
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
+              )}
+              <div
+                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] ${
+                  isHighlighted(options[2].key) ? 'font-semibold' : ''
+                }`}
+              >
+                {options[2].label}
+              </div>
+            </div>
             <div
-              className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] ${
-                isHighlighted(options[2].key) ? 'font-semibold' : ''
-              }`}
+              className={`${
+                isHighlighted(options[3].key) ? focusBox : mutedBox
+              } p-8 space-y-4 text-center`}
             >
-              {options[2].label}
+              {isHighlighted(options[3].key) && (
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
+              )}
+              <div
+                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] ${
+                  isHighlighted(options[3].key) ? 'font-semibold' : ''
+                }`}
+              >
+                {options[3].label}
+              </div>
             </div>
           </motion.div>
         </div>

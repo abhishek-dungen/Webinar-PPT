@@ -34,19 +34,17 @@ const Slide32bIntro = () => (
           </div>
           <div className={`${boxBase} p-8 space-y-4`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
-              How to Get the Job/Freelance work
+              How to Get the Job
             </div>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className={`${boxBase} px-8 py-6 text-center max-w-xl w-full`}
-        >
-          <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">AI Tools</div>
+          <div className={`${boxBase} p-8 space-y-4`}>
+            <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
+              Freelancing Using Excel
+            </div>
+          </div>
+          <div className={`${boxBase} p-8 space-y-4 text-center`}>
+            <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">AI Tools</div>
+          </div>
         </motion.div>
       </div>
     </div>

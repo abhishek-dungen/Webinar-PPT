@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 const categories = [
   'Sales & Revenue Analytics',
   'Business KPIs',
-  'Automation & Productivity Systems',
+  'Automation VBA and MACROS',
   'Operations, Inventory & Process Tracking',
   'Finance, Accounting & Business Modeling',
-  'Data Cleaning, Formatting & Preparation',
 ];
 
 const SlideFreelanceProjectCategories = () => (

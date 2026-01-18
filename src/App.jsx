@@ -7,6 +7,13 @@ import Slide24 from './components/Slide24';
 import Slide32bIntro from './components/Slide32bIntro';
 import Slide32bIntroFreelance from './components/Slide32bIntroFreelance';
 import Slide32bHighlightUnique from './components/Slide32bHighlightUnique';
+import SlideExcelNotFormulas from './components/SlideExcelNotFormulas';
+import SlideWhereToLearnAllThis from './components/SlideWhereToLearnAllThis';
+import SlidePracticePracticePractice from './components/SlidePracticePracticePractice';
+import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
+import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
+import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
+import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
@@ -117,10 +124,49 @@ import SlideProductAll from './components/SlideProductAll';
 const App = () => {
   const [targetSlide, setTargetSlide] = useState('');
   const [totalSlides, setTotalSlides] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(1);
 
   useEffect(() => {
     const sections = document.querySelectorAll('.slide-section');
     setTotalSlides(sections.length);
+    setCurrentSlide(1);
+  }, []);
+
+  useEffect(() => {
+    let rafId = 0;
+    const updateCurrentSlide = () => {
+      const sections = Array.from(document.querySelectorAll('.slide-section'));
+      if (!sections.length) return;
+      const offset = window.innerHeight * 0.35;
+      let closestIndex = 0;
+      let closestDistance = Number.POSITIVE_INFINITY;
+      sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        const distance = Math.abs(rect.top - offset);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+      setCurrentSlide(closestIndex + 1);
+    };
+
+    const onScroll = () => {
+      if (rafId) return;
+      rafId = window.requestAnimationFrame(() => {
+        rafId = 0;
+        updateCurrentSlide();
+      });
+    };
+
+    updateCurrentSlide();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (rafId) window.cancelAnimationFrame(rafId);
+    };
   }, []);
 
   const handleJump = useCallback(
@@ -153,6 +199,9 @@ const App = () => {
           className="no-spinner w-10 rounded-xl border border-white/15 bg-transparent px-1 py-1 text-center text-xs font-semibold text-white placeholder:text-white/40 focus:border-premium-gold focus:outline-none"
         />
       </form>
+      <div className="fixed bottom-4 left-4 z-40 select-text rounded-full border border-white/10 bg-premium-black/60 px-3 py-1 text-[11px] font-semibold text-white/70 backdrop-blur">
+        Slide {currentSlide}/{totalSlides || '?'}
+      </div>
       <SlideGuidelines />
       <Slide21 />
       <Slide22 />
@@ -160,6 +209,7 @@ const App = () => {
       <Slide24 />
       <Slide32bIntro />
       <Slide32bHighlightUnique />
+      <SlideExcelNotFormulas />
       <Slide32j />
       <Slide32k visibleSteps={1} />
       <Slide32k visibleSteps={2} />
@@ -185,7 +235,15 @@ const App = () => {
       <Slide32k visibleSteps={4} />
       <Slide32w />
       <SlideLearnExcelSources />
+      <SlideWhereToLearnAllThis />
+      <Slide32j />
+      <SlidePracticePracticePractice />
+      <SlideModule22ExcelAI />
+      <SlideModule23InterviewPreparation />
+      <SlideReadyMadeProjects />
+      <SlideFreelanceProjectCategories />
       <SlideMicrosoft365Link />
+      <SlideCompleteAdvancedExcelAI />
       <SlideExcelOffer />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />
@@ -234,12 +292,6 @@ const App = () => {
       <Slide32bFlowJobApplicationsUnique />
       <Slide52InterviewTypes />
       <Slide52TechnicalRound />
-      <SlideProductSet1 />
-      <SlideProductSet2 />
-      <SlideProductSet3 />
-      <SlideProductSet4 />
-      <SlideProductAll />
-      <SlideExcelOffer />
       <Slide32bIntroFreelance />
       <Slide32bFlowFreelance />
       <Slide32bFlowFreelanceHighlight />
@@ -276,6 +328,12 @@ const App = () => {
       <SlideGoodReviews />
       <SlideNegotiationTips />
       <SlideOutboundProcessHighlightFollowUp />
+      <SlideProductSet1 />
+      <SlideProductSet2 />
+      <SlideProductSet3 />
+      <SlideProductSet4 />
+      <SlideProductAll />
+      <SlideExcelOffer />
     </div>
   );
 };

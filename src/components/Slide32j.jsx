@@ -42,7 +42,7 @@ const Slide32j = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        Excel Workflow Map
+        All steps are covered in Depth
       </motion.h2>
 
       <motion.div

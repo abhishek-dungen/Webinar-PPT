@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import product1 from '../../Product /1 image.png';
+import product1 from '../../Product /xyzimage.png';
 
 const SlideProductSet1 = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-6 md:px-12 lg:px-20 pb-28 relative overflow-hidden">

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const productOne = new URL('../../Product /1 image.png', import.meta.url).href;
+const productOne = new URL('../../Product /xyzimage.png', import.meta.url).href;
 const productTwo = new URL('../../Product /image.png', import.meta.url).href;
 
 const SlideExcelOffer = () => (
@@ -82,6 +82,7 @@ const SlideExcelOffer = () => (
           Special Webinar Price Rs 2,000
         </div>
       </motion.div>
+
     </div>
   </section>
 );

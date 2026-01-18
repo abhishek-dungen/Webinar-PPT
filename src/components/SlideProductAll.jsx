@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import product1 from '../../Product /1 image.png';
+import product1 from '../../Product /xyzimage.png';
 import product2 from '../../Product /2image.png';
 import product3 from '../../Product /3image.png';
 import product4 from '../../Product /4image.png';

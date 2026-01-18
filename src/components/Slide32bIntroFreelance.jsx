@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 
 const boxBase =
   'bg-gradient-to-br from-[#1B1B1F] via-premium-black to-[#2B2B30] border border-[#2F2F35] rounded-3xl shadow-2xl';
+const focusBox = `${boxBase} border-2 border-premium-gold/70 shadow-[0_25px_80px_rgba(255,215,0,0.3)] bg-gradient-to-br from-premium-gold/20 via-premium-gold/10 to-[#1B1B1F] relative overflow-hidden`;
+const mutedBox = `${boxBase} opacity-60`;
 
 const Slide32bIntroFreelance = () => (
   <section className="slide-section min-h-screen w-full flex items-center justify-center px-8 md:px-16 lg:px-24 relative overflow-hidden">
@@ -27,22 +29,23 @@ const Slide32bIntroFreelance = () => (
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full"
         >
-          <div className={`${boxBase} p-8 space-y-4`}>
+          <div className={`${mutedBox} p-8 space-y-4`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
               Learn Excel
             </div>
           </div>
-          <div className={`${boxBase} p-8 space-y-4`}>
+          <div className={`${mutedBox} p-8 space-y-4`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
               How to Get the Job
             </div>
           </div>
-          <div className={`${boxBase} p-8 space-y-4`}>
-            <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
+          <div className={`${focusBox} p-8 space-y-4`}>
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
+            <div className="relative text-premium-gold text-sm uppercase tracking-[0.4em]">
               Freelancing Using Excel
             </div>
           </div>
-          <div className={`${boxBase} p-8 space-y-4 text-center`}>
+          <div className={`${mutedBox} p-8 space-y-4 text-center`}>
             <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">AI Tools</div>
           </div>
         </motion.div>
