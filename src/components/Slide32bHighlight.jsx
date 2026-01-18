@@ -57,7 +57,7 @@ const Slide32bHighlight = ({ highlight = 'learn' } = {}) => {
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
               )}
               <div
-                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] ${
+                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] text-center ${
                   isHighlighted(options[1].key) ? 'font-semibold' : ''
                 }`}
               >
@@ -69,7 +69,7 @@ const Slide32bHighlight = ({ highlight = 'learn' } = {}) => {
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
               )}
               <div
-                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] ${
+                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] text-center ${
                   isHighlighted(options[2].key) ? 'font-semibold' : ''
                 }`}
               >
@@ -85,7 +85,7 @@ const Slide32bHighlight = ({ highlight = 'learn' } = {}) => {
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent via-premium-gold/10 to-transparent blur-3xl opacity-70" />
               )}
               <div
-                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] ${
+                className={`relative text-premium-gold text-sm uppercase tracking-[0.4em] text-center ${
                   isHighlighted(options[3].key) ? 'font-semibold' : ''
                 }`}
               >

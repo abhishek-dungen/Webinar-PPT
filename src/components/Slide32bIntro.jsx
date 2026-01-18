@@ -28,17 +28,17 @@ const Slide32bIntro = () => (
           className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full"
         >
           <div className={`${boxBase} p-8 space-y-4`}>
-            <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
+            <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
               Learn Excel
             </div>
           </div>
           <div className={`${boxBase} p-8 space-y-4`}>
-            <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
+            <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
               How to Get the Job
             </div>
           </div>
           <div className={`${boxBase} p-8 space-y-4`}>
-            <div className="text-premium-gold text-sm uppercase tracking-[0.4em]">
+            <div className="text-premium-gold text-sm uppercase tracking-[0.4em] text-center">
               Freelancing Using Excel
             </div>
           </div>

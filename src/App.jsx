@@ -14,6 +14,8 @@ import SlideModule22ExcelAI from './components/SlideModule22ExcelAI';
 import SlideModule23InterviewPreparation from './components/SlideModule23InterviewPreparation';
 import SlideReadyMadeProjects from './components/SlideReadyMadeProjects';
 import SlideCompleteAdvancedExcelAI from './components/SlideCompleteAdvancedExcelAI';
+import SlideBigTextPrice from './components/SlideBigTextPrice';
+import SlideExcelOfferCopy from './components/SlideExcelOfferCopy';
 import Slide32bRecap from './components/Slide32bRecap';
 import Slide32j from './components/Slide32j';
 import Slide32k from './components/Slide32k';
@@ -241,9 +243,12 @@ const App = () => {
       <SlideModule22ExcelAI />
       <SlideModule23InterviewPreparation />
       <SlideReadyMadeProjects />
+      <Slide32bPortfolioLookCopy />
       <SlideFreelanceProjectCategories />
       <SlideMicrosoft365Link />
       <SlideCompleteAdvancedExcelAI />
+      <SlideBigTextPrice />
+      <SlideExcelOfferCopy />
       <SlideExcelOffer />
       <Slide32k visibleSteps={4} />
       <Slide32k visibleSteps={5} />

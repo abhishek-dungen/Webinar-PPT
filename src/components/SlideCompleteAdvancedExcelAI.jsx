@@ -7,6 +7,10 @@ const features = [
   'In-depth technical interview preparation',
   '80+ industry-level, ready-made Excel projects',
   'Latest Microsoft Office 365 official license',
+  'Entire Recoridng of the Masterclass',
+  'Masterclass PPT',
+  'All the files used in the Masterclass',
+  'Master Prompt Doc',
 ];
 
 const SlideCompleteAdvancedExcelAI = () => (
@@ -40,6 +44,7 @@ const SlideCompleteAdvancedExcelAI = () => (
           </li>
         ))}
       </motion.ul>
+
     </div>
   </section>
 );

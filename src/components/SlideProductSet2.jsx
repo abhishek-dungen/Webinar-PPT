@@ -36,7 +36,7 @@ const SlideProductSet2 = () => (
       <p className="text-lg text-white/70 font-display">
         Actual Value: ₹
         <span className="font-bold text-red-500 text-4xl line-through decoration-[3px]">
-          6,000
+          13,000
         </span>
       </p>
       <p className="text-3xl font-display font-semibold text-emerald-200">
